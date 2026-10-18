@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Design notes from the Impeccable skill (kept locally, not in the repo)
+.impeccable/
+PRODUCT.md
+DESIGN.md
