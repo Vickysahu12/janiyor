@@ -30,7 +30,7 @@ export function flyToCart(sourceEl, src) {
     borderRadius: '50%',
     zIndex: 90,
     pointerEvents: 'none',
-    boxShadow: '0 20px 40px -20px rgb(24 32 97 / 0.6)',
+    boxShadow: '0 20px 40px -20px rgb(74 47 39 / 0.6)',
   })
   document.body.appendChild(ghost)
 

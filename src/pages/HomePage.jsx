@@ -11,7 +11,6 @@ import { MoodList } from '../sections/home/MoodList'
 import { Capsule } from '../sections/home/Capsule'
 import { OfferTickets } from '../sections/home/OfferTickets'
 import { Testimonials } from '../sections/home/Testimonials'
-import { Instagram } from '../sections/home/Instagram'
 
 export function HomePage() {
   useDocumentTitle()
@@ -29,7 +28,6 @@ export function HomePage() {
       <Capsule />
       <OfferTickets />
       <Testimonials />
-      <Instagram />
     </>
   )
 }

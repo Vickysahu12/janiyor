@@ -1,6 +1,6 @@
 // Brand-level settings. Change the name, offers, fees or contact details here, not in components.
 export const site = {
-  name: 'Janiyor',
+  name: 'Janniyor',
   tagline: 'Cotton for sunny days',
   currency: 'INR',
   locale: 'en-IN',
@@ -11,7 +11,7 @@ export const site = {
   orderPrefix: 'JN',
   instagram: '@janiyor',
   phone: '+91 98765 43210',
-  email: 'hello@janiyor.in',
+  email: 'hello@janniyor.in',
 
   announcements: [
     'Free shipping on orders above ₹1,499',
@@ -51,7 +51,7 @@ export const site = {
         ],
       },
       {
-        title: 'Janiyor',
+        title: 'Janniyor',
         links: [
           { label: 'Our story', to: '/about' },
           { label: 'How we make it', to: '/about#craft' },
@@ -59,12 +59,6 @@ export const site = {
           { label: 'Privacy', to: '/help#privacy' },
         ],
       },
-    ],
-    social: [
-      { label: 'Instagram', icon: 'instagram', href: 'https://instagram.com' },
-      { label: 'Pinterest', icon: 'pinterest', href: 'https://pinterest.com' },
-      { label: 'YouTube', icon: 'youtube', href: 'https://youtube.com' },
-      { label: 'Facebook', icon: 'facebook', href: 'https://facebook.com' },
     ],
   },
 }

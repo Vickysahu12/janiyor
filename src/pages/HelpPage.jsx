@@ -29,7 +29,7 @@ const SECTIONS = [
     id: 'care',
     title: 'Care',
     faqs: [
-      ['How should I wash my Janiyor pieces?', 'Gentle wash cold, inside out, and dry in shade. Hand wash anything with mirror work or embroidery.'],
+      ['How should I wash my Janniyor pieces?', 'Gentle wash cold, inside out, and dry in shade. Hand wash anything with mirror work or embroidery.'],
       ['Will the colour bleed?', 'Printed and ombre pieces may release a little colour in the first wash. Wash them separately in cold water.'],
     ],
   },

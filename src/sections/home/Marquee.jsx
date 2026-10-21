@@ -14,7 +14,7 @@ export function Marquee() {
     </ul>
   )
   return (
-    <section aria-label="Why Janiyor" className="marquee mt-4 overflow-hidden bg-marigold py-4 text-ink sm:py-5">
+    <section aria-label="Why Janniyor" className="marquee mt-4 overflow-hidden bg-marigold py-4 text-ink sm:py-5">
       <div className="marquee-track flex w-max" style={{ '--marquee-duration': '38s' }}>
         {row(false)}
         {row(true)}

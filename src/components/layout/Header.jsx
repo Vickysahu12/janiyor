@@ -57,7 +57,7 @@ export function Header() {
       <header
         className={cn(
           'sticky top-0 z-40 transition-[background-color,box-shadow] duration-300',
-          scrolled ? 'bg-chalk/85 shadow-[0_10px_30px_-22px_rgb(24_32_97/0.5)] backdrop-blur-xl' : 'bg-chalk',
+          scrolled ? 'bg-chalk/85 shadow-[0_10px_30px_-22px_rgb(74_47_39/0.5)] backdrop-blur-xl' : 'bg-chalk',
         )}
       >
         <div className="shell flex h-16 items-center justify-between gap-4 lg:h-[76px]">

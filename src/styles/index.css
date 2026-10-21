@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource/gilda-display/400.css";
 @import "@fontsource-variable/hanken-grotesk";
 @import "@fontsource-variable/hanken-grotesk/wght-italic.css";
 
@@ -9,29 +9,32 @@
 /*
   Design tokens. Every colour, font, radius, shadow and easing on the site comes from here.
 
-  Janiyor is "Indigo & Sun": a chalk-white page, deep handloom indigo that owns whole
-  fields (hero, deal, footer), indigo-black ink for text, and marigold for the sparks:
-  highlights, tags, stars and hover fills. Photography brings the rest of the colour.
-  Type: Bricolage Grotesque, bold and tight, for display; Hanken Grotesk for everything else.
+  Janniyor takes its identity from the logo: a slender dusty-rose J with a sage sprig and a
+  small star, over "Janniyor" in a fine high-contrast serif, on warm cream. So the site is
+  "Cocoa & Rose": a cream page, deep cocoa (the wordmark's brown) for the whole fields (hero,
+  deal, footer) and for type, and the J's dusty rose for the sparks: highlights, tags, stars
+  and hover fills. The token names (indigo, marigold) are kept from the first build so every
+  component follows; their values are the logo's.
+  Type: Gilda Display, the wordmark's fine serif, for display; Hanken Grotesk for everything else.
   Shape: pills for every control, 22px on photos and panels, 14px on fields.
 
   The aliases at the end (paper, stone, bronze...) keep shared logic components working;
   new code uses the named tokens.
 */
 @theme {
-  --color-chalk: #fbfbf8;
-  --color-mist: #eceefa;
-  --color-mist-deep: #dde1f3;
-  --color-indigo: #26338c;
-  --color-indigo-deep: #182061;
-  --color-indigo-soft: #4b58b0;
-  --color-ink: #14173a;
-  --color-ink-soft: #555a78;
-  --color-marigold: #f4b63f;
-  --color-marigold-deep: #d9951a;
-  --color-marigold-soft: #fdecc8;
-  --color-line: rgb(20 23 58 / 0.1);
-  --color-line-strong: rgb(20 23 58 / 0.22);
+  --color-chalk: #fbf6f0;
+  --color-mist: #f5ebe2;
+  --color-mist-deep: #ead9cc;
+  --color-indigo: #4a2f27;
+  --color-indigo-deep: #33201a;
+  --color-indigo-soft: #7e5d52;
+  --color-ink: #2f1e18;
+  --color-ink-soft: #6f5a51;
+  --color-marigold: #c48473;
+  --color-marigold-deep: #9e5e4f;
+  --color-marigold-soft: #f4ddd5;
+  --color-line: rgb(47 30 24 / 0.1);
+  --color-line-strong: rgb(47 30 24 / 0.22);
   --color-success: #23794f;
   --color-danger: #c42b2b;
 
@@ -44,15 +47,15 @@
   --color-bronze-bright: var(--color-marigold);
   --color-bronze-soft: var(--color-marigold-soft);
 
-  --font-display: "Bricolage Grotesque Variable", "Bricolage Grotesque", ui-sans-serif, sans-serif;
+  --font-display: "Gilda Display", "Cormorant Garamond", Georgia, serif;
   --font-sans: "Hanken Grotesk Variable", "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
 
   --radius-card: 22px;
   --radius-field: 14px;
 
-  --shadow-float: 0 14px 34px -18px rgb(24 32 97 / 0.35);
-  --shadow-lift: 0 30px 70px -30px rgb(24 32 97 / 0.45);
-  --shadow-card: 0 24px 40px -24px rgb(20 23 58 / 0.55);
+  --shadow-float: 0 14px 34px -18px rgb(74 47 39 / 0.35);
+  --shadow-lift: 0 30px 70px -30px rgb(74 47 39 / 0.45);
+  --shadow-card: 0 24px 40px -24px rgb(47 30 24 / 0.55);
 
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
@@ -148,10 +151,9 @@
   /* Display type: Bricolage, bold and tight. */
   .display {
     font-family: var(--font-display);
-    font-weight: 700;
-    font-variation-settings: "opsz" 96;
-    letter-spacing: -0.035em;
-    line-height: 0.98;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.02;
   }
 
   /* Small labels: tags, tabs, tiny headings. Used sparingly. */

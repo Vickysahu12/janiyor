@@ -10,7 +10,7 @@ export function ErrorPage() {
 
   return (
     <div className="flex min-h-dvh flex-col items-center justify-center bg-paper px-6 text-center">
-      <p className="display text-[36px] text-indigo">janiyor</p>
+      <p className="display text-[36px] text-indigo">janniyor</p>
       <h1 className="display mt-8 text-[40px] text-ink">Something went wrong</h1>
       <p className="mt-3 max-w-[40ch] text-[15px] text-ink-soft">
         Sorry, this page ran into a problem. Your bag and wishlist are safe. Please try again.

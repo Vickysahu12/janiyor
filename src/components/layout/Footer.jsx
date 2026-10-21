@@ -80,6 +80,7 @@ export function Footer() {
       <div className="overflow-hidden rounded-[32px] bg-indigo text-chalk">
         <div className="shell grid gap-12 pt-14 pb-10 lg:grid-cols-[1.1fr_1fr] lg:pt-20">
           <div>
+            <img src="/brand/logo-light.png" alt={site.name} width={902} height={769} loading="lazy" className="mb-10 h-24 w-auto sm:h-28" />
             <h2 className="display max-w-[14ch] text-[40px] sm:text-[56px]">
               Sunny letters, <span className="text-marigold">10% off</span> the first order.
             </h2>
@@ -108,21 +109,6 @@ export function Footer() {
         </div>
 
         <div className="shell flex flex-col gap-5 border-t border-chalk/15 py-6 sm:flex-row sm:items-center sm:justify-between">
-          <ul className="flex gap-2">
-            {site.footer.social.map((s) => (
-              <li key={s.label}>
-                <a
-                  href={s.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={s.label}
-                  className="press grid size-11 place-items-center rounded-full bg-chalk/10 transition-[background-color,color,transform] duration-300 hover:-translate-y-0.5 hover:bg-marigold hover:text-ink"
-                >
-                  <Icon name={s.icon} size={19} />
-                </a>
-              </li>
-            ))}
-          </ul>
           <ul className="flex flex-wrap gap-2" aria-label="Payment methods">
             {PAYMENTS.map((p) => (
               <li key={p} className="rounded-full bg-chalk/10 px-3 py-1 text-[12px] text-chalk/85">
@@ -133,12 +119,12 @@ export function Footer() {
         </div>
 
         <p className="shell pt-1 pb-6 text-[12px] text-chalk/60">
-          © {YEAR} {site.name}. Demo storefront: prices, reviews and orders are sample data.
+          © {YEAR} {site.name}. All rights reserved.
         </p>
 
         {/* The sign-off: the name set huge, its descenders cut off by the panel's bottom edge. */}
         <div className="h-[19vw] overflow-hidden lg:h-[14.5vw]" aria-hidden="true">
-          <p className="display text-center text-[27vw] leading-[0.82] tracking-[-0.06em] text-chalk/[0.08] select-none lg:text-[20vw]">janiyor</p>
+          <p className="display text-center text-[27vw] leading-[0.82] tracking-[-0.06em] text-chalk/[0.08] select-none lg:text-[20vw]">janniyor</p>
         </div>
       </div>
     </footer>

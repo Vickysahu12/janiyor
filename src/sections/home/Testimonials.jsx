@@ -27,7 +27,7 @@ export function Testimonials() {
                 <Icon key={i} name="star" size={16} weight="fill" />
               ))}
             </span>
-            4.7 average from 2,900+ reviews (sample data)
+            4.7 average from 2,900+ reviews
           </p>
         </div>
         <div className="hidden gap-2 sm:flex">

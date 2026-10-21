@@ -2,20 +2,19 @@
 // (or a CMS later) can change copy and imagery in one place.
 // Image ids refer to public/media/products (jNN-1 full look, jNN-2 close crop).
 
-// Campaign hero: the photo, a giant number behind the model, and the model cut out of the
-// photo (public/media/hero/<id>-bg.webp and <id>-cut.webp, made from the client's shots).
+// Hero: one sharp photograph per look (public/media/hero/<id>.webp, the client's full shot).
+// `focus` keeps the head in frame whatever the shape of the panel.
 export const campaign = {
-  kicker: 'Janiyor Summer Week',
-  dates: '18 Oct to 26 Oct',
-  number: '30',
-  title: 'Cotton Week',
-  sub: 'Up to 30% off co-ords, shirts and dresses. Breathable, bright and made to move.',
-  cta: { label: 'Shop the sale', to: '/shop?sale=1' },
-  footnote: 'Online only',
+  kicker: 'New season',
+  dates: 'Ethnic wear for her',
+  title: 'Cotton for sunny, unhurried days',
+  sub: 'Co-ords, shirts, dresses and kurta sets in breathable cotton, cut loose and dyed bright.',
+  cta: { label: 'Shop new in', to: '/shop?sort=new' },
+  footnote: 'Free returns in 7 days',
   looks: [
-    { id: 'j21', productId: 'j21', height: '74%' }, // close-up: smaller, so the number shows
-    { id: 'j17', productId: 'j17', height: '94%' },
-    { id: 'j18', productId: 'j18', height: '94%' },
+    { id: 'j21', productId: 'j21', focus: '50% 0%' },
+    { id: 'j17', productId: 'j17', focus: '50% 0%' },
+    { id: 'j18', productId: 'j18', focus: '50% 4%' },
   ],
 }
 
@@ -148,12 +147,6 @@ export const testimonials = [
 ]
 
 // Instagram grid (images link to the brand page).
-export const instagram = {
-  handle: '@janiyor',
-  href: 'https://instagram.com',
-  images: ['j08-1', 'j26-1', 'j32-1', 'j36-1', 'j43-1', 'j50-1'],
-}
-
 export const serviceRow = [
   { icon: 'truck', title: 'Free shipping', body: 'On orders above ₹1,499' },
   { icon: 'returns', title: '7-day returns', body: 'Free pickup from home' },
